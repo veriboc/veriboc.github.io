@@ -3,98 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VERIBOC</title>
+  <title>VERIBOC | Brasserie Artisanale</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f8f4eb;
-      color: #333;
-      line-height: 1.6;
+    html{
+      scroll-behavior:smooth;
     }
 
-    header {
-      background: linear-gradient(#8b5a2b, #5c3b1e);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f8f4eb;
+      color:#333;
+      line-height:1.6;
     }
 
-    header h1 {
-      font-size: 3.5em;
+    header{
+      background:linear-gradient(135deg,#8b5a2b,#5c3b1e);
+      color:#fff;
+      text-align:center;
+      padding:80px 20px;
     }
 
-    header p {
-      font-size: 1.3em;
-      margin-top: 15px;
+    header h1{
+      font-size:3.5rem;
+      letter-spacing:4px;
+      margin-bottom:10px;
     }
 
-    nav {
-      background: #3f2a18;
-      text-align: center;
-      padding: 15px;
+    header p{
+      font-size:1.2rem;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
+    nav{
+      background:#3f2a18;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:100;
+      text-align:center;
     }
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-weight:bold;
+      transition:.3s;
     }
 
-    h2 {
-      color: #8b5a2b;
-      margin-bottom: 20px;
+    nav a:hover{
+      color:#f3c86b;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 20px;
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    h2{
+      color:#8b5a2b;
+      margin-bottom:25px;
+      text-align:center;
+      font-size:2rem;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #8b5a2b;
-      color: white;
-      padding: 12px 22px;
-      text-decoration: none;
-      border-radius: 8px;
+    section p{
+      text-align:center;
+      font-size:1.05rem;
     }
 
-    footer {
-      background: #3f2a18;
-      color: white;
-      text-align: center;
-      padding: 30px;
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+      margin-top:35px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:25px;
+      box-shadow:0 6px 18px rgba(0,0,0,.15);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 12px 25px rgba(0,0,0,.25);
+    }
+
+    .card h3{
+      color:#8b5a2b;
+      margin-bottom:15px;
+      text-align:center;
+    }
+
+    .card p{
+      white-space:pre-line;
+      text-align:left;
+    }
+
+    .button{
+      display:block;
+      width:220px;
+      margin:40px auto 0;
+      text-align:center;
+      background:#8b5a2b;
+      color:white;
+      text-decoration:none;
+      padding:14px;
+      border-radius:8px;
+      transition:.3s;
+    }
+
+    .button:hover{
+      background:#6f431d;
+    }
+
+    footer{
+      background:#3f2a18;
+      color:white;
+      text-align:center;
+      padding:30px 20px;
+      margin-top:40px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>VERIBOC</h1>
-  <p>Brasserie artisanale - Des bières brassées avec passion.</p>
+  <p>Brasserie artisanale • Bières brassées avec passion</p>
 </header>
 
 <nav>
@@ -107,57 +154,79 @@
   <h2>Notre histoire</h2>
 
   <p>
-    Née de l'alliance entre le bocage Normand et Bourbonnais. Houblon produit à la ferme
+    Née de l'alliance entre le bocage normand et le Bourbonnais,
+    VERIBOC est une brasserie artisanale attachée à son terroir.
+    Nous brassons des bières de caractère avec des ingrédients de qualité,
+    notamment du houblon produit à la ferme.
   </p>
 </section>
 
 <section id="bieres">
+
   <h2>Nos bières</h2>
 
   <div class="cards">
 
     <div class="card">
-      <h3>L'écume tropical</h3>
-      <p></p>
+      <h3>L'Écume Tropicale</h3>
+      <p>
+Une bière aux notes exotiques et fruitées.
+
+🌴 Fruits tropicaux
+🍺 Finale rafraîchissante
+🌾 Houblons aromatiques
+      </p>
     </div>
 
     <div class="card">
       <h3>Si c'est de la bière</h3>
-      <p>De la framboise dans la bière, vous allez me dire que ce n'est pas de la biere. Et Si c'est de la biere. 
 
-Une biere qui plaît à tout le monde ! 
+      <p>
+De la framboise dans une bière ?
+Vous allez peut-être dire que ce n'est pas de la bière...
 
-100g/L Framboise + Citron vert + Lactose</p>
+Et pourtant, si !
+
+Une bière gourmande qui plaît au plus grand nombre.
+
+🍓 100 g/L de framboises
+🍋 Citron vert
+🥛 Lactose
+      </p>
     </div>
 
     <div class="card">
-      <h3></h3>
-      <p>Une bière généreusement houblonnée aux arômes fruités.</p>
+      <h3>Prochaine création</h3>
+
+      <p>
+Une nouvelle recette est actuellement en préparation.
+
+Restez connectés pour découvrir notre prochaine bière artisanale.
+      </p>
     </div>
 
   </div>
 
   <a class="button" href="#contact">Nous contacter</a>
+
 </section>
 
 <section id="contact">
+
   <h2>Contact</h2>
 
   <p>
     📍 France
-  </p>
-
-  <p>
+    <br><br>
     📧 contact@veriboc.fr
+    <br><br>
+    Suivez prochainement VERIBOC sur les réseaux sociaux.
   </p>
 
-  <p>
-    Suivez bientôt Veriboc sur les réseaux sociaux !
-  </p>
 </section>
 
 <footer>
-  © 2026 Veriboc - Tous droits réservés.
+  © 2026 VERIBOC — Tous droits réservés.
 </footer>
 
 </body>
