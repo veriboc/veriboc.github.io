@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veriboc - Brasserie Artisanale</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f4eb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(#8b5a2b, #5c3b1e);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 15px;
+    }
+
+    nav {
+      background: #3f2a18;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #8b5a2b;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #8b5a2b;
+      color: white;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #3f2a18;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍺 Veriboc</h1>
+  <p>Brasserie artisanale - Des bières brassées avec passion.</p>
+</header>
+
+<nav>
+  <a href="#histoire">Notre histoire</a>
+  <a href="#bieres">Nos bières</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="histoire">
+  <h2>Notre histoire</h2>
+
+  <p>
+    Bienvenue chez <strong>Veriboc</strong>, une brasserie artisanale
+    où tradition, qualité et créativité se rencontrent.
+    Chaque bière est brassée avec des ingrédients soigneusement sélectionnés
+    pour offrir une expérience unique.
+  </p>
+</section>
+
+<section id="bieres">
+  <h2>Nos bières</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🍺 Blonde</h3>
+      <p>Légère, rafraîchissante et équilibrée.</p>
+    </div>
+
+    <div class="card">
+      <h3>🍺 Ambrée</h3>
+      <p>Des notes de caramel et une belle rondeur.</p>
+    </div>
+
+    <div class="card">
+      <h3>🍺 IPA</h3>
+      <p>Une bière généreusement houblonnée aux arômes fruités.</p>
+    </div>
+
+  </div>
+
+  <a class="button" href="#contact">Nous contacter</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>
+    📍 France
+  </p>
+
+  <p>
+    📧 contact@veriboc.fr
+  </p>
+
+  <p>
+    Suivez bientôt Veriboc sur les réseaux sociaux !
+  </p>
+</section>
+
+<footer>
+  © 2026 Veriboc - Tous droits réservés.
+</footer>
+
+</body>
+</html>
